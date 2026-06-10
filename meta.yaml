@@ -1,0 +1,32 @@
+{% set name = "miles-cpp" %}
+{% set version = "0.0.1" %}
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+source:
+  git_url: https://github.com/mleszczynski-dev/miles-cpp.git
+  git_rev: v{{ version }}
+  git_depth: 1
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - {{ compiler('cxx') }}
+    - cmake
+  host:
+    # -
+  run:
+    # -
+
+test:
+  commands:
+    # coś, co potwierdzi, że pakiet się zbudował, np. uruchomienie binarki:
+
+about:
+  home: https://github.com/mleszczynski-dev/miles-conda
+  license: MIT
+  summary: ""
