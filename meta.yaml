@@ -18,17 +18,16 @@ requirements:
     - {{ compiler('cxx') }}
     - cmake
     - make
-    - gtest
   host:
-    # -
-  run:
-    # -
+    - nlohmann_json
+    - spdlog
+    - gtest
 
 test:
   commands:
-    # coś, co potwierdzi, że pakiet się zbudował, np. uruchomienie binarki:
+    - miles-cpp-test
 
 about:
-  home: https://github.com/mleszczynski-dev/miles-conda
+  home: https://github.com/mleszczynski-dev/miles-cpp
   license: MIT
-  summary: ""
+  summary: "Experimental C++ static library with app info features"
